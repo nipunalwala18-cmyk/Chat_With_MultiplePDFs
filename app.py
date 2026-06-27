@@ -97,6 +97,8 @@ def get_agent(vector_store):
 
 def main():
     load_dotenv()
+    if "GOOGLE_API_KEY" in st.secrets:
+        os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
     st.set_page_config(page_title="Chat with Multiple PDFs")
 
@@ -166,6 +168,6 @@ def main():
                 text += block["text"]
 
         st.write(text)
-        
+
 if __name__ == "__main__":
     main()
