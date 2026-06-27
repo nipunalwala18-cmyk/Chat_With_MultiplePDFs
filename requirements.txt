@@ -1,8 +1,9 @@
+streamlit
+python-dotenv
+PyPDF2
 langchain
 langgraph
-langchain_community
-langchain-openai
-langchain-groq
-python-dotenv
+langchain-community
 langchain-google-genai
-langchain-tavily
+langchain-text-splitters
+faiss-cpu
